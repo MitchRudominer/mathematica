@@ -1,0 +1,402 @@
+(* Content-type: application/vnd.wolfram.mathematica *)
+
+(*** Wolfram Notebook File ***)
+(* http://www.wolfram.com/nb *)
+
+(* CreatedBy='Mathematica 9.0' *)
+
+(*CacheID: 234*)
+(* Internal cache information:
+NotebookFileLineBreakTest
+NotebookFileLineBreakTest
+NotebookDataPosition[       157,          7]
+NotebookDataLength[     15715,        393]
+NotebookOptionsPosition[     15205,        371]
+NotebookOutlinePosition[     15542,        386]
+CellTagsIndexPosition[     15499,        383]
+WindowFrame->Normal*)
+
+(* Beginning of Notebook Content *)
+Notebook[{
+
+Cell[CellGroupData[{
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "A", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"A", " ", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "0"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "n"}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Column", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<A plot of the solution of the linear differential equation\>\"", 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<``=A``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"x", "'"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", "'"}], "}"}]}], "}"}], "]"}], ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", "x", "}"}], ",", 
+              RowBox[{"{", "y", "}"}]}], "}"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", "\"\<where\>\"", ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<A=``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", "A", "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"StreamPlot", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"-", "x"}], ",", 
+             RowBox[{"n", " ", "y"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", 
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ","}], " ", 
+        "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", "]"}],
+    ",", " ", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", 
+     RowBox[{"-", "3"}], ",", " ", "3"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.607820282576147*^9, 3.607820332665286*^9}, {
+   3.607820604115221*^9, 3.6078206275073137`*^9}, {3.6078207526839237`*^9, 
+   3.607820788594618*^9}, {3.607820881646422*^9, 3.607820948746269*^9}, {
+   3.607820979810855*^9, 3.607821011108921*^9}, {3.607821092819845*^9, 
+   3.607821229122916*^9}, {3.607821396554784*^9, 3.607821401218647*^9}, {
+   3.607821765450315*^9, 3.6078217742100677`*^9}, {3.607822015828743*^9, 
+   3.607822091258532*^9}, {3.607822272817663*^9, 3.607822405779963*^9}, {
+   3.6078224437558107`*^9, 3.6078225753025293`*^9}, {3.6078227982270517`*^9, 
+   3.607822849193404*^9}, 3.6259681618688993`*^9, 3.62596825872651*^9}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = -3., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`n$$], -3, 3}}, Typeset`size$$ = {
+    542., {141.5, 148.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`n$92047$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = -3}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$92047$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$}, $CellContext`A$ = {{-1, 0}, {
+           0, $CellContext`n$$}}; 
+        Column[{"A plot of the solution of the linear differential equation", 
+           
+           StringForm["``=A``", 
+            MatrixForm[{{
+               Derivative[1][$CellContext`x]}, {
+               Derivative[1][$CellContext`y]}}], 
+            MatrixForm[{{$CellContext`x}, {$CellContext`y}}]], "where", 
+           StringForm["A=``", 
+            MatrixForm[$CellContext`A$]], 
+           
+           StreamPlot[{-$CellContext`x, $CellContext`n$$ $CellContext`y}, \
+{$CellContext`x, -10, 10}, {$CellContext`y, -10, 10}, Axes -> True], Null}]], 
+      "Specifications" :> {{$CellContext`n$$, -3, 3}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{589., {187., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.6078220934594383`*^9, 3.607822298593162*^9, {3.607822386863229*^9, 
+   3.6078224068371677`*^9}, 3.607822454285264*^9, {3.6078224977303553`*^9, 
+   3.6078225776155653`*^9}, {3.607822825042388*^9, 3.607822851283226*^9}, 
+   3.6259681687387943`*^9, 3.625968260776505*^9}]
+}, Open  ]],
+
+Cell[CellGroupData[{
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "A", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"A", " ", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"0", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{
+           RowBox[{"-", "1"}], ",", "n"}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Column", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<A plot of the solution of the linear differential equation\>\"", 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<``=A``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"x", "'"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", "'"}], "}"}]}], "}"}], "]"}], ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", "x", "}"}], ",", 
+              RowBox[{"{", "y", "}"}]}], "}"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", "\"\<where\>\"", ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<A=``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", "A", "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"N", "[", 
+          RowBox[{"Eigenvalues", "[", "A", "]"}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"StreamPlot", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{"y", ",", 
+             RowBox[{
+              RowBox[{"-", "x"}], " ", "+", 
+              RowBox[{"n", " ", "y"}]}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "100"}], ",", "100"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", 
+             RowBox[{"-", "100"}], ",", "100"}], "}"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ","}], " ", 
+        "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", "]"}],
+    ",", " ", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", 
+     RowBox[{"-", "5"}], ",", " ", "0"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.62587993068311*^9, 3.62587996717771*^9}, {
+  3.6258800016764593`*^9, 3.625880031388997*^9}, {3.625880233626218*^9, 
+  3.625880247576364*^9}, {3.6258804693907003`*^9, 3.6258804718711977`*^9}, {
+  3.625882116594832*^9, 3.6258821291851482`*^9}, {3.6354719602352743`*^9, 
+  3.635472014724957*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = -3.347151756286621, Typeset`show$$ = 
+    True, Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`n$$], -5, 0}}, Typeset`size$$ = {542., {290., 297.}}, 
+    Typeset`update$$ = 0, Typeset`initDone$$, Typeset`skipInitDone$$ = 
+    True, $CellContext`n$214900$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = -5}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$214900$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$}, $CellContext`A$ = {{0, 
+           1}, {-1, $CellContext`n$$}}; 
+        Column[{"A plot of the solution of the linear differential equation", 
+           
+           StringForm["``=A``", 
+            MatrixForm[{{
+               Derivative[1][$CellContext`x]}, {
+               Derivative[1][$CellContext`y]}}], 
+            MatrixForm[{{$CellContext`x}, {$CellContext`y}}]], "where", 
+           StringForm["A=``", 
+            MatrixForm[$CellContext`A$]], 
+           N[
+            Eigenvalues[$CellContext`A$]], 
+           
+           StreamPlot[{$CellContext`y, -$CellContext`x + $CellContext`n$$ \
+$CellContext`y}, {$CellContext`x, -100, 100}, {$CellContext`y, -100, 100}, 
+            Axes -> True], Null}]], 
+      "Specifications" :> {{$CellContext`n$$, -5, 0}}, "Options" :> {}, 
+      "DefaultOptions" :> {}],
+     ImageSizeCache->{589., {346., 353.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UndoTrackedVariables:>{Typeset`show$$, Typeset`bookmarkMode$$},
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Output",
+ CellChangeTimes->{
+  3.625882135427781*^9, {3.6354719878977537`*^9, 3.635472016041349*^9}}]
+}, Open  ]],
+
+Cell[BoxData[
+ RowBox[{"Manipulate", "[", 
+  RowBox[{
+   RowBox[{"Module", "[", 
+    RowBox[{
+     RowBox[{"{", "A", "}"}], ",", "\[IndentingNewLine]", 
+     RowBox[{
+      RowBox[{"A", " ", "=", 
+       RowBox[{"{", 
+        RowBox[{
+         RowBox[{"{", 
+          RowBox[{"1", ",", "1"}], "}"}], ",", 
+         RowBox[{"{", 
+          RowBox[{"0", ",", "n"}], "}"}]}], "}"}]}], ";", 
+      "\[IndentingNewLine]", 
+      RowBox[{"Column", "[", 
+       RowBox[{"{", "\[IndentingNewLine]", 
+        RowBox[{
+        "\"\<A plot of the solution of the linear differential equation\>\"", 
+         ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<``=A``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", 
+               RowBox[{"x", "'"}], "}"}], ",", 
+              RowBox[{"{", 
+               RowBox[{"y", "'"}], "}"}]}], "}"}], "]"}], ",", 
+           RowBox[{"MatrixForm", "[", 
+            RowBox[{"{", 
+             RowBox[{
+              RowBox[{"{", "x", "}"}], ",", 
+              RowBox[{"{", "y", "}"}]}], "}"}], "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", "\"\<where\>\"", ",", "\[IndentingNewLine]", 
+         RowBox[{"StringForm", "[", 
+          RowBox[{"\"\<A=``\>\"", ",", 
+           RowBox[{"MatrixForm", "[", "A", "]"}]}], "]"}], ",", 
+         "\[IndentingNewLine]", 
+         RowBox[{"StreamPlot", "[", 
+          RowBox[{
+           RowBox[{"{", 
+            RowBox[{
+             RowBox[{"x", "+", "y"}], ",", 
+             RowBox[{"n", " ", "y"}]}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"x", ",", 
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+           RowBox[{"{", 
+            RowBox[{"y", ",", 
+             RowBox[{"-", "10"}], ",", "10"}], "}"}], ",", 
+           RowBox[{"Axes", "\[Rule]", "True"}]}], "]"}], ","}], " ", 
+        "\[IndentingNewLine]", "}"}], "]"}]}]}], "\[IndentingNewLine]", "]"}],
+    ",", " ", "\[IndentingNewLine]", 
+   RowBox[{"{", 
+    RowBox[{"n", ",", " ", 
+     RowBox[{"-", "2"}], ",", " ", "2"}], "}"}]}], "]"}]], "Input",
+ CellChangeTimes->{{3.625968739931614*^9, 3.625968828992388*^9}}],
+
+Cell[BoxData[
+ TagBox[
+  StyleBox[
+   DynamicModuleBox[{$CellContext`n$$ = 1., Typeset`show$$ = True, 
+    Typeset`bookmarkList$$ = {}, Typeset`bookmarkMode$$ = "Menu", 
+    Typeset`animator$$, Typeset`animvar$$ = 1, Typeset`name$$ = 
+    "\"untitled\"", Typeset`specs$$ = {{
+      Hold[$CellContext`n$$], -2, 2}}, Typeset`size$$ = {
+    542., {141.5, 148.5}}, Typeset`update$$ = 0, Typeset`initDone$$, 
+    Typeset`skipInitDone$$ = True, $CellContext`n$163551$$ = 0}, 
+    DynamicBox[Manipulate`ManipulateBoxes[
+     1, StandardForm, "Variables" :> {$CellContext`n$$ = -2}, 
+      "ControllerVariables" :> {
+        Hold[$CellContext`n$$, $CellContext`n$163551$$, 0]}, 
+      "OtherVariables" :> {
+       Typeset`show$$, Typeset`bookmarkList$$, Typeset`bookmarkMode$$, 
+        Typeset`animator$$, Typeset`animvar$$, Typeset`name$$, 
+        Typeset`specs$$, Typeset`size$$, Typeset`update$$, Typeset`initDone$$,
+         Typeset`skipInitDone$$}, "Body" :> 
+      Module[{$CellContext`A$}, $CellContext`A$ = {{1, 1}, {
+           0, $CellContext`n$$}}; 
+        Column[{"A plot of the solution of the linear differential equation", 
+           
+           StringForm["``=A``", 
+            MatrixForm[{{
+               Derivative[1][$CellContext`x]}, {
+               Derivative[1][$CellContext`y]}}], 
+            MatrixForm[{{$CellContext`x}, {$CellContext`y}}]], "where", 
+           StringForm["A=``", 
+            MatrixForm[$CellContext`A$]], 
+           
+           StreamPlot[{$CellContext`x + $CellContext`y, $CellContext`n$$ \
+$CellContext`y}, {$CellContext`x, -10, 10}, {$CellContext`y, -10, 10}, Axes -> 
+            True], Null}]], "Specifications" :> {{$CellContext`n$$, -2, 2}}, 
+      "Options" :> {}, "DefaultOptions" :> {}],
+     ImageSizeCache->{589., {187., 194.}},
+     SingleEvaluation->True],
+    Deinitialization:>None,
+    DynamicModuleValues:>{},
+    SynchronousInitialization->True,
+    UnsavedVariables:>{Typeset`initDone$$},
+    UntrackedVariables:>{Typeset`size$$}], "Manipulate",
+   Deployed->True,
+   StripOnInput->False],
+  Manipulate`InterpretManipulate[1]]], "Input",
+ CellChangeTimes->{3.625969152369131*^9}]
+},
+WindowSize->{1678, 1018},
+WindowMargins->{{Automatic, 0}, {Automatic, 0}},
+FrontEndVersion->"10.0 for Linux x86 (64-bit) (December 4, 2014)",
+StyleDefinitions->"Default.nb"
+]
+(* End of Notebook Content *)
+
+(* Internal cache information *)
+(*CellTagsOutline
+CellTagsIndex->{}
+*)
+(*CellTagsIndex
+CellTagsIndex->{}
+*)
+(*NotebookFileOutline
+Notebook[{
+Cell[CellGroupData[{
+Cell[579, 22, 2828, 66, 253, "Input"],
+Cell[3410, 90, 2375, 49, 398, "Output"]
+}, Open  ]],
+Cell[CellGroupData[{
+Cell[5822, 144, 2652, 66, 275, "Input"],
+Cell[8477, 212, 2350, 50, 716, "Output"]
+}, Open  ]],
+Cell[10842, 265, 2211, 57, 253, "Input"],
+Cell[13056, 324, 2145, 45, 398, "Input"]
+}
+]
+*)
+
+(* End of internal cache information *)
